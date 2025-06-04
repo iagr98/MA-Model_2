@@ -1,0 +1,79 @@
+----------------------------------------
+Separator model calculation
+----------------------------------------
+Constants: number of segments in separator 200 -
+Constants: number of droplet classes 50 -
+Constants: total flow rate inlet 0.24000000000000002 m3/h
+Constants: phase fraction at inlet 0.2 -
+Constants: radius of separator 0.075 m
+Constants: length of separator 0.56 m
+Constants: density of organic phase 819.72 kg/m3
+Constants: density of water phase 998.29 kg/m3
+Constants: viscosity of organic phase 0.00973 Pa*s
+Constants: viscosity of water phase 0.001012 Pa*s
+Constants: density difference 178.56999999999994 kg/m3
+Constants: interfacial tension 0.036 N/m
+Constants: asymetric film drainage parameter 0.00975 -
+----------------------------------------
+Initial conditions water height:  0.055 m
+Initial conditions liquid height:  0.15 m
+Initial conditions dense-packed zone:  0.095 m
+----------------------------------------
+Boundary conditions sauter mean diameter:  610.0 um
+Boundary conditions maximum diameter:  1524.9999999999998 um
+Boundary conditions total flow rate liquid inlet:  0.24000000000000002 m3/h
+Boundary conditions aq. phase flow rate inlet:  0.24000000000000002 m3/h
+Boundary conditions aq. phase flow rate outlet:  0.12000000000000001 m3/h
+Boundary conditions org. phase flow rate outlet:  0.12000000000000001 m3/h
+Boundary conditions holdup in aq. phase:  0.1999970198009807 -
+Boundary conditions droplet classes:  [  15.25   45.75   76.25  106.75  137.25  167.75  198.25  228.75  259.25
+  289.75  320.25  350.75  381.25  411.75  442.25  472.75  503.25  533.75
+  564.25  594.75  625.25  655.75  686.25  716.75  747.25  777.75  808.25
+  838.75  869.25  899.75  930.25  960.75  991.25 1021.75 1052.25 1082.75
+ 1113.25 1143.75 1174.25 1204.75 1235.25 1265.75 1296.25 1326.75 1357.25
+ 1387.75 1418.25 1448.75 1479.25 1509.75] um
+Boundary conditions total number of droplets:  66261 -
+Boundary conditions number of droplets:  [0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 1.83128354e+01 1.76529680e+02 5.21363173e+02 1.24679644e+03
+ 2.25046147e+03 3.45711784e+03 4.50249088e+03 5.31346972e+03
+ 5.80909041e+03 5.86322730e+03 5.67480057e+03 5.24717155e+03
+ 4.70151436e+03 4.05692275e+03 3.44693080e+03 2.86202861e+03
+ 2.33409537e+03 1.89000015e+03 1.52389161e+03 1.20357920e+03
+ 9.46869211e+02 7.41941563e+02 5.67209513e+02 4.42030318e+02
+ 3.44159024e+02 2.65780402e+02 2.03902431e+02 1.51927127e+02
+ 1.18107596e+02 9.08519223e+01 6.99304376e+01 5.24660885e+01
+ 3.95817040e+01 3.07015711e+01 2.39201693e+01 1.78167194e+01
+ 1.37007139e+01 1.04552141e+01 8.15622453e+00 6.02929213e+00
+ 4.50323852e+00 3.49708422e+00 2.73521508e+00 2.19237560e+00
+ 1.56513461e+00 1.17499335e+00] -
+Overwriting boundary conditions org. phase flow rate outlet for h_w=const.:  0.0479734533575967 m3/h
+Overwriting boundary conditions aq. phase flow rate outlet for constant h_w & h_w:  0.19202654664240332 m3/h
+Solving ivp...
+  message: The solver successfully reached the end of the integration interval.
+  success: True
+   status: 0
+        t: [ 0.000e+00  1.000e-01 ...  9.999e+02  1.000e+03]
+        y: [[ 5.500e-02  5.500e-02 ...  5.500e-02  5.500e-02]
+            [ 1.500e-01  1.500e-01 ...  1.500e-01  1.500e-01]
+            [ 9.500e-02  9.500e-02 ...  9.410e-02  9.410e-02]]
+      sol: <scipy.integrate._ivp.common.OdeSolution object at 0x000001B39D85BF90>
+ t_events: [array([], dtype=float64), array([], dtype=float64), array([], dtype=float64)]
+ y_events: [array([], dtype=float64), array([], dtype=float64), array([], dtype=float64)]
+     nfev: 26
+     njev: 0
+      nlu: 0
+[array([], dtype=float64), array([], dtype=float64), array([], dtype=float64)]
+----------------------------------------
+Start calculation of algebraic variables
+----------------------------------------
+q_dp is zero at length:  0.3528 m
+Height of dense-packed zone at end of simulation:  39.09658897926629 mm
+No droplets at outlet at t=t_end!
+No droplets at outlet at t=t_end!
+No droplets at outlet at t=t_end!
+No droplets at outlet at t=t_end!
+No droplets at outlet at t=t_end!
+No droplets at outlet at t=t_end!
+----------------------------------------
+Computation time:  0:16:10.745191
+----------------------------------------
