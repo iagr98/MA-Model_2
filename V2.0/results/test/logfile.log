@@ -1,7 +1,7 @@
 ----------------------------------------
 Separator model calculation
 ----------------------------------------
-Constants: number of segments in separator 200 -
+Constants: number of segments in separator 400 -
 Constants: number of droplet classes 50 -
 Constants: total flow rate inlet 0.24000000000000002 m3/h
 Constants: phase fraction at inlet 0.2 -
@@ -25,29 +25,29 @@ Boundary conditions total flow rate liquid inlet:  0.24000000000000002 m3/h
 Boundary conditions aq. phase flow rate inlet:  0.24000000000000002 m3/h
 Boundary conditions aq. phase flow rate outlet:  0.12000000000000001 m3/h
 Boundary conditions org. phase flow rate outlet:  0.12000000000000001 m3/h
-Boundary conditions holdup in aq. phase:  0.1999970198009807 -
+Boundary conditions holdup in aq. phase:  0.1999940014791956 -
 Boundary conditions droplet classes:  [  15.25   45.75   76.25  106.75  137.25  167.75  198.25  228.75  259.25
   289.75  320.25  350.75  381.25  411.75  442.25  472.75  503.25  533.75
   564.25  594.75  625.25  655.75  686.25  716.75  747.25  777.75  808.25
   838.75  869.25  899.75  930.25  960.75  991.25 1021.75 1052.25 1082.75
  1113.25 1143.75 1174.25 1204.75 1235.25 1265.75 1296.25 1326.75 1357.25
  1387.75 1418.25 1448.75 1479.25 1509.75] um
-Boundary conditions total number of droplets:  66261 -
+Boundary conditions total number of droplets:  33130 -
 Boundary conditions number of droplets:  [0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00
- 1.83128354e+01 1.76529680e+02 5.21363173e+02 1.24679644e+03
- 2.25046147e+03 3.45711784e+03 4.50249088e+03 5.31346972e+03
- 5.80909041e+03 5.86322730e+03 5.67480057e+03 5.24717155e+03
- 4.70151436e+03 4.05692275e+03 3.44693080e+03 2.86202861e+03
- 2.33409537e+03 1.89000015e+03 1.52389161e+03 1.20357920e+03
- 9.46869211e+02 7.41941563e+02 5.67209513e+02 4.42030318e+02
- 3.44159024e+02 2.65780402e+02 2.03902431e+02 1.51927127e+02
- 1.18107596e+02 9.08519223e+01 6.99304376e+01 5.24660885e+01
- 3.95817040e+01 3.07015711e+01 2.39201693e+01 1.78167194e+01
- 1.37007139e+01 1.04552141e+01 8.15622453e+00 6.02929213e+00
- 4.50323852e+00 3.49708422e+00 2.73521508e+00 2.19237560e+00
- 1.56513461e+00 1.17499335e+00] -
-Overwriting boundary conditions org. phase flow rate outlet for h_w=const.:  0.0479734533575967 m3/h
-Overwriting boundary conditions aq. phase flow rate outlet for constant h_w & h_w:  0.19202654664240332 m3/h
+ 9.15627952e+00 8.82635077e+01 2.60677653e+02 6.23388810e+02
+ 1.12521376e+03 1.72853283e+03 2.25121147e+03 2.65669477e+03
+ 2.90450137e+03 2.93156940e+03 2.83735746e+03 2.62354618e+03
+ 2.35072170e+03 2.02843076e+03 1.72343939e+03 1.43099271e+03
+ 1.16703007e+03 9.44985812e+02 7.61934306e+02 6.01780520e+02
+ 4.73427460e+02 3.70965183e+02 2.83600476e+02 2.21011823e+02
+ 1.72076915e+02 1.32888195e+02 1.01949677e+02 7.59624169e+01
+ 5.90529067e+01 4.54252756e+01 3.49646911e+01 2.62326483e+01
+ 1.97905533e+01 1.53505539e+01 1.19599041e+01 8.90822526e+00
+ 6.85025357e+00 5.22752818e+00 4.07805072e+00 3.01460057e+00
+ 2.25158528e+00 1.74851572e+00 1.36758690e+00 1.09617126e+00
+ 7.82555495e-01 5.87487807e-01] -
+Overwriting boundary conditions org. phase flow rate outlet for h_w=const.:  0.04799455524726494 m3/h
+Overwriting boundary conditions aq. phase flow rate outlet for constant h_w & h_w:  0.19200544475273507 m3/h
 Solving ivp...
   message: The solver successfully reached the end of the integration interval.
   success: True
@@ -55,8 +55,8 @@ Solving ivp...
         t: [ 0.000e+00  1.000e-01 ...  1.999e+02  2.000e+02]
         y: [[ 5.500e-02  5.500e-02 ...  5.500e-02  5.500e-02]
             [ 1.500e-01  1.500e-01 ...  1.500e-01  1.500e-01]
-            [ 9.500e-02  9.500e-02 ...  9.482e-02  9.482e-02]]
-      sol: <scipy.integrate._ivp.common.OdeSolution object at 0x000001AA7F6CD110>
+            [ 9.500e-02  9.500e-02 ...  9.496e-02  9.496e-02]]
+      sol: <scipy.integrate._ivp.common.OdeSolution object at 0x0000022FA53EF3E0>
  t_events: [array([], dtype=float64), array([], dtype=float64), array([], dtype=float64)]
  y_events: [array([], dtype=float64), array([], dtype=float64), array([], dtype=float64)]
      nfev: 26
@@ -67,14 +67,10 @@ Solving ivp...
 Start calculation of algebraic variables
 ----------------------------------------
 q_dp is zero at length:  0.3528 m
-Height of dense-packed zone at end of simulation:  39.81788195040653 mm.  Volume:  0.006607168797141424 m^3
+Height of dense-packed zone at end of simulation:  39.96262676005682 mm.  Volume:  0.006607813182433296 m^3
 Efficieny of separetor at the end of simulation:  100.0 [%]
-No droplets at outlet at t=t_end!
-No droplets at outlet at t=t_end!
-No droplets at outlet at t=t_end!
-No droplets at outlet at t=t_end!
-No droplets at outlet at t=t_end!
-No droplets at outlet at t=t_end!
 ----------------------------------------
-Computation time:  0:03:45.912626
+Computation time:  0:08:10.073245
 ----------------------------------------
+
+--------
