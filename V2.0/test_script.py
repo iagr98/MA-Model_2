@@ -18,7 +18,7 @@ def init_sim(exp, phi_0, dV_ges, eps_0, N_s, N_d):
     ic.set_initial_conditions(exp)
     return sm.SeparatorModel(pp, gp, np, mp, op, ic)
 
-def run_sim(exp="ye", phi_0=610e-6, dV_ges=240, eps_0=0.2, N_s=200, N_d=50):
+def run_sim(exp="ye", phi_0=610e-6, dV_ges=240, eps_0=0.2, N_s=200, N_d=80):
     Sim = init_sim(exp, phi_0, dV_ges, eps_0, N_s, N_d)
     Sim.solve_ODE(h_w_const=True, h_l_const=True, print_logfile=True, report=True, calc_algebraic=True)
     return Sim
