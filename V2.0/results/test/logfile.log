@@ -52,14 +52,14 @@ Solving ivp...
   message: The solver successfully reached the end of the integration interval.
   success: True
    status: 0
-        t: [ 0.000e+00  1.000e-01 ...  9.999e+02  1.000e+03]
+        t: [ 0.000e+00  1.000e-01 ...  9.900e+00  1.000e+01]
         y: [[ 5.500e-02  5.500e-02 ...  5.500e-02  5.500e-02]
             [ 1.500e-01  1.500e-01 ...  1.500e-01  1.500e-01]
-            [ 9.500e-02  9.500e-02 ...  9.410e-02  9.410e-02]]
-      sol: <scipy.integrate._ivp.common.OdeSolution object at 0x000001B39D85BF90>
+            [ 9.500e-02  9.500e-02 ...  9.499e-02  9.499e-02]]
+      sol: <scipy.integrate._ivp.common.OdeSolution object at 0x00000243B6D43310>
  t_events: [array([], dtype=float64), array([], dtype=float64), array([], dtype=float64)]
  y_events: [array([], dtype=float64), array([], dtype=float64), array([], dtype=float64)]
-     nfev: 26
+     nfev: 14
      njev: 0
       nlu: 0
 [array([], dtype=float64), array([], dtype=float64), array([], dtype=float64)]
@@ -67,7 +67,8 @@ Solving ivp...
 Start calculation of algebraic variables
 ----------------------------------------
 q_dp is zero at length:  0.3528 m
-Height of dense-packed zone at end of simulation:  39.09658897926629 mm
+Height of dense-packed zone at end of simulation:  39.99089149789827 mm.  Volume:  0.00660787139396387 m^3
+Efficieny of separetor at the end of simulation:  100.0 [%]
 No droplets at outlet at t=t_end!
 No droplets at outlet at t=t_end!
 No droplets at outlet at t=t_end!
@@ -75,5 +76,5 @@ No droplets at outlet at t=t_end!
 No droplets at outlet at t=t_end!
 No droplets at outlet at t=t_end!
 ----------------------------------------
-Computation time:  0:16:10.745191
+Computation time:  0:00:40.825867
 ----------------------------------------

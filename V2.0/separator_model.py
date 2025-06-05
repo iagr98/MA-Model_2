@@ -58,6 +58,10 @@ class SeparatorModel:
         self.h_w = 0
         self.h_l = 0
         self.h_dp = 0
+
+        # output variables
+        self.V_dp = 0
+        self.E = 0
         
     # update operating conditions
     def update_operating_conditions(self, operating_conditions):
@@ -233,7 +237,6 @@ class SeparatorModel:
 
     def get_A_x(self,h_w):
         import numpy as np
-
         r = self.geometry_parameter.r
         eps = self.numerical_parameter.eps
         # crosssectional area (normal vector in x direction) of separator dependent on height of water h_w and radius of separator r
@@ -284,6 +287,23 @@ class SeparatorModel:
         import numpy as np
         V_d = np.pi/6*D**3
         return V_d
+    
+    def get_V_dp(self):
+        # get the volume of the densed-packed zone at the end of the simulation
+        import numpy as np
+        A_A = np.pi * self.geometry_parameter.r**2
+        A_h_w = self.get_A_x(self.h_w)
+        A_h_l = self.get_A_x((self.h_l-self.h_dp-self.h_w))
+        return (A_A - A_h_w - A_h_l) * self.geometry_parameter.l
+    
+    def get_efficiency(self, n):
+        N_d = self.numerical_parameter.N_d
+        V_out = 0
+        V_in = 0
+        for i in range(N_d):
+            V_out = V_out + n[-1,-1,i]*self.get_V_d(self.d_bins[i])
+            V_in = V_in + n[-1,0,i]*self.get_V_d(self.d_bins[i])
+        return 1 - (V_out / V_in)
 
     def get_droplet_classes(self, d_32, d_max=3e-3, s=0.32, plot=False):
         '''
@@ -1001,9 +1021,15 @@ class SeparatorModel:
                         if report:
                             print('q_dp is zero at length: ', L_dp, 'm')
                         break
-        # print height of dense-packed zone at end of simulation
+
+        ## assigning output variables
+        self.V_dp = self.get_V_dp()
+        self.E = self.get_efficiency(n)
+
+        # print height and volume of dense-packed zone amd efficiency of the separator at end of simulation
         if report:
-            print('Height of dense-packed zone at end of simulation: ', (z.T[-1,2]-z.T[-1,0])*1e3, 'mm')
+            print('Height of dense-packed zone at end of simulation: ', (z.T[-1,2]-z.T[-1,0])*1e3, 'mm.', ' Volume: ', self.V_dp, 'm^3')
+            print('Efficieny of separetor at the end of simulation: ', self.E*100, '[%]')
 
         ## save results as dataframe and export 
         df = pd.DataFrame(data=z.T, columns=['Water height', 'Liquid height', 'Dense-packed zone height']) # 

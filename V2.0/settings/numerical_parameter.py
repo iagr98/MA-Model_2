@@ -8,6 +8,6 @@ N_s = 200 # -
 N_d = 50 # -
 eps = 1e-12 # epsilon for numerical stability
 
-t_end = 1000 # end time of the simulation s
+t_end = 10 # end time of the simulation s
 
 
