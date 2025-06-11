@@ -62,6 +62,7 @@ class SeparatorModel:
         # output variables
         self.V_dp = 0
         self.E = 0
+        self.L_dp = 0
         
     # update operating conditions
     def update_operating_conditions(self, operating_conditions):
@@ -294,7 +295,8 @@ class SeparatorModel:
         A_A = np.pi * self.geometry_parameter.r**2
         A_h_w = self.get_A_x(self.h_w)
         A_h_l = self.get_A_x((self.h_l-self.h_dp-self.h_w))
-        return (A_A - A_h_w - A_h_l) * self.geometry_parameter.l
+        # return (A_A - A_h_w - A_h_l) * self.geometry_parameter.l
+        return (A_A - A_h_w - A_h_l) * self.L_dp
     
     def get_efficiency(self, n):
         N_d = self.numerical_parameter.N_d
@@ -1018,6 +1020,7 @@ class SeparatorModel:
             for i in range(N_s):
                     if q_dp[-1,1+i] == 0:
                         L_dp = i*self.geometry_parameter.l/N_s
+                        self.L_dp = L_dp
                         if report:
                             print('q_dp is zero at length: ', L_dp, 'm')
                         break

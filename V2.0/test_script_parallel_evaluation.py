@@ -33,7 +33,7 @@ if __name__ == "__main__":
     
     # Save results
     df_results = pd.DataFrame(results)
-    df_results.to_csv('simulation_results_parallel_evaluation.csv', index=False)
+    df_results.to_csv('simulation_results_parallel_evaluation_L_dp.csv', index=False)
     print("Alle Simulationen abgeschlossen. Ergebnisse gespeichert.")
 
    
