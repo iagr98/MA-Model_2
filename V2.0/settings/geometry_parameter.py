@@ -10,7 +10,7 @@ def set_geometry_parameter(exp="ye"):
     if (exp == "ye"):
         r = 0.075 # radius of separator m
         l = 0.56 # length of separator m
-    elif((exp == "niba1") or (exp == "niba2") or (exp == "niba2") or (exp == "niba4")):
+    elif((exp == "niba1") or (exp == "niba2") or (exp == "niba3") or (exp == "niba4")):
         r = 0.1
         l = 1.0
     else:

@@ -73,7 +73,7 @@ Solving ivp...
         y: [[ 1.000e-01  1.000e-01 ...  9.970e-02  9.970e-02]
             [ 2.000e-01  2.000e-01 ...  2.000e-01  2.000e-01]
             [ 1.300e-01  1.300e-01 ...  1.903e-01  1.904e-01]]
-      sol: <scipy.integrate._ivp.common.OdeSolution object at 0x000001174CAC6960>
+      sol: <scipy.integrate._ivp.common.OdeSolution object at 0x0000016289BEB740>
  t_events: [array([ 9.660e+01]), array([], dtype=float64), array([], dtype=float64)]
  y_events: [array([[ 9.970e-02,  2.000e-01,  1.990e-01]]), array([], dtype=float64), array([], dtype=float64)]
      nfev: 56
@@ -86,9 +86,10 @@ Start calculation of algebraic variables
 Height of dense-packed zone at end of simulation:  99.30484103213118 mm.  Volume:  0.015768931378499478 m^3
 Efficieny of separetor at the end of simulation:  100.0 [%]
 ----------------------------------------
-Computation time:  0:03:51.204441
+Computation time:  0:03:35.998702
 ----------------------------------------
-omputation time:  0:07:37.745128
+---------------
+ 0:06:29.830785
 ----------------------------------------
 ----------------------------
----------------------------
+----------------------------

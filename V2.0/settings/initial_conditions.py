@@ -11,7 +11,7 @@ def set_initial_conditions(exp="ye"):
         h_w = 0.055
         h_dp = 0.095
         h_l = 0.15
-    elif((exp == "niba1") or (exp == "niba2") or (exp == "niba2") or (exp == "niba4")):
+    elif((exp == "niba1") or (exp == "niba2") or (exp == "niba3") or (exp == "niba4")):
         h_w = 0.1
         h_dp = 0.13
         h_l = 0.2

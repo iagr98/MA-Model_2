@@ -1019,11 +1019,11 @@ class SeparatorModel:
             # find length where q_dp is zero
             for i in range(N_s):
                     if q_dp[-1,1+i] == 0:
-                        L_dp = i*self.geometry_parameter.l/N_s
-                        self.L_dp = L_dp
+                        L_dp = i*self.geometry_parameter.l/N_s                        
                         if report:
                             print('q_dp is zero at length: ', L_dp, 'm')
                         break
+            self.L_dp = L_dp
 
         ## assigning output variables
         self.V_dp = self.get_V_dp()
