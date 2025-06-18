@@ -26,8 +26,8 @@ def run_sim(exp="ye", phi_0=610e-6, dV_ges=240, eps_0=0.2, N_s=200, N_d=80):
 if __name__ == "__main__":
 
     exp = "ye"
-    phi_0 = 610e-6
-    dV_ges = 240
-    eps_0 = 0.2
+    phi_0 = 50e-6
+    dV_ges = 2500
+    eps_0 = 0.5
 
     Sim = run_sim(exp, phi_0, dV_ges, eps_0)

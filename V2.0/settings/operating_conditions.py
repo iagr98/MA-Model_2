@@ -4,7 +4,7 @@ operating conditions for the simulation
 
 # genereal settings
 name_of_simulation = 'test' # name of the simulation
-do_plot = False # plot the results of the simulation
+do_plot = True # plot the results of the simulation
 
 def set_operating_conditions(phi_0=1e-3, dV_ges=1000, eps_0=0.5):
     global Sauterdiameter_in, Q_in, phasefraction_in, Q_w_out, Q_o_out
