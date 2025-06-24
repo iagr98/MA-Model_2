@@ -17,7 +17,7 @@ def set_physical_properties(exp="ye"):
         eta_w = 1.012e-3
         delta_rho = abs(rho_w-rho_o)
         sigma = 0.036
-        r_v = 0.00975
+        r_v = 0.01224
     elif(exp == "niba1"):
         rho_o = 832.5
         rho_w = 1002.7
@@ -25,7 +25,7 @@ def set_physical_properties(exp="ye"):
         eta_w = 1.02e-3
         delta_rho = abs(rho_w-rho_o)
         sigma = 0.00822
-        r_v = 0.0347
+        r_v = 0.05073
     elif(exp == "niba2"):
         rho_o = 825.4
         rho_w = 1000
@@ -33,7 +33,7 @@ def set_physical_properties(exp="ye"):
         eta_w = 0.82e-3
         delta_rho = abs(rho_w-rho_o)
         sigma = 0.00822
-        r_v = 0.0269
+        r_v = 0.03329
     elif(exp == "niba3"):
         rho_o = 818.2
         rho_w = 996.5
@@ -41,7 +41,7 @@ def set_physical_properties(exp="ye"):
         eta_w = 0.68e-3
         delta_rho = abs(rho_w-rho_o)
         sigma = 0.00822
-        r_v = 0.0162
+        r_v = 0.02182
     elif(exp == "niba4"):
         rho_o = 810.9
         rho_w = 992.3
@@ -49,7 +49,7 @@ def set_physical_properties(exp="ye"):
         eta_w = 0.56e-3
         delta_rho = abs(rho_w-rho_o)
         sigma = 0.00822
-        r_v = 0.015
+        r_v = 0.02014
     else:
         rho_o = 883 # density of organic phase kg/m3
         rho_w = 998 # density of water phase kg/m3
