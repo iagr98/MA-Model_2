@@ -49,7 +49,7 @@ def set_physical_properties(exp="ye"):
         eta_w = 0.56e-3
         delta_rho = abs(rho_w-rho_o)
         sigma = 0.00822
-        r_v = 0.015
+        r_v = 0.02024
     elif(exp == "2mmol_21C"):
         rho_o = 832.5
         rho_w = 1002.7
