@@ -1056,7 +1056,7 @@ class SeparatorModel:
         df.to_csv(self.path + '\\results.csv')
         #save in separate folder for csv files
         path_csv = datetime.now().strftime('results_csv' + str("\\") + '%Y_%m_%d_%H_%M_' + self.name_of_simulation)
-        df.to_csv(path_csv+'.csv')
+        # df.to_csv(path_csv+'.csv')
 
         ## plotting
         if self.do_plot:
@@ -1082,8 +1082,8 @@ class SeparatorModel:
         df2['sol.status'] = [sol.status]
         df2['t_end'] = [self.t_end]
         df2['CompTime'] = [end_time - start_time]
-        df2.to_csv(self.path + '\\results_secondary.csv')
-        df2.to_csv(path_csv+'_secondary.csv')
+        # df2.to_csv(self.path + '\\results_secondary.csv')
+        # df2.to_csv(path_csv+'_secondary.csv')
 
         if print_logfile:
             # print log outputs
