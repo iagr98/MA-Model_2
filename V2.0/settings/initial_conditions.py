@@ -5,7 +5,7 @@ h_dp: initial height of the dense-packed zone m
 h_l: initial height of the light phase m
 '''
 
-def set_initial_conditions(exp="ye"):
+def set_initial_conditions(exp="ye", h_dp_max=0.05, h_w_0=0.1):
     global h_w, h_dp, h_l
     if (exp=="ye"):
         h_w = 0.055
@@ -14,6 +14,10 @@ def set_initial_conditions(exp="ye"):
     elif((exp == "niba1") or (exp == "niba2") or (exp == "niba3") or (exp == "niba4")):
         h_w = 0.1
         h_dp = 0.13
+        h_l = 0.2
+    elif((exp == "2mmol_21C") or (exp == "2mmol_30C") or (exp == "5mmol_30C") or (exp == "10mmol_21C") or (exp == "10mmol_30C") or (exp == "15mmol_20C") or (exp == "15mmol_30C") or (exp == "20mmol_21C") or (exp == "20mmol_30C") or (exp == "25mmol_21C") or (exp == "25mmol_30C")):
+        h_w = h_w_0
+        h_dp = h_dp_max + h_w_0
         h_l = 0.2
     else:
         h_w = 0.1

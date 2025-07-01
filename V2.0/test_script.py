@@ -10,24 +10,26 @@ import settings.numerical_parameter as np
 import settings.operating_conditions as op
 import settings.initial_conditions as ic
 
-def init_sim(exp, phi_0, dV_ges, eps_0, N_s, N_d):
+def init_sim(exp, phi_0, dV_ges, eps_0, h_dp_max, h_w_0, N_s, N_d):
     gp.set_geometry_parameter(exp)
     pp.set_physical_properties(exp)
     np.set_numerical_parameter(N_s, N_d)
     op.set_operating_conditions(phi_0, dV_ges, eps_0)
-    ic.set_initial_conditions(exp)
+    ic.set_initial_conditions(exp, h_dp_max, h_w_0)
     return sm.SeparatorModel(pp, gp, np, mp, op, ic)
 
-def run_sim(exp="ye", phi_0=610e-6, dV_ges=240, eps_0=0.2, N_s=200, N_d=80):
-    Sim = init_sim(exp, phi_0, dV_ges, eps_0, N_s, N_d)
+def run_sim(exp="ye", phi_0=610e-6, dV_ges=240, eps_0=0.2, h_dp_max=0.11, h_w_0=0.1, N_s=200, N_d=80):
+    Sim = init_sim(exp, phi_0, dV_ges, eps_0, h_dp_max, h_w_0, N_s, N_d)
     Sim.solve_ODE(h_w_const=True, h_l_const=True, print_logfile=True, report=True, calc_algebraic=True)
     return Sim
 
 if __name__ == "__main__":
 
-    exp = "ye"
-    phi_0 = 50e-6
-    dV_ges = 2500
+    exp = "2mmol_21C"
+    phi_0 = 816.5e-6
+    dV_ges = 989
     eps_0 = 0.5
+    h_dp_max = 0.009
+    h_w_0 = 0.1
 
-    Sim = run_sim(exp, phi_0, dV_ges, eps_0)
+    Sim = run_sim(exp, phi_0, dV_ges, eps_0, h_dp_max, h_w_0)

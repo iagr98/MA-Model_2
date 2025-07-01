@@ -50,6 +50,62 @@ def set_physical_properties(exp="ye"):
         delta_rho = abs(rho_w-rho_o)
         sigma = 0.00822
         r_v = 0.015
+    elif(exp == "2mmol_21C"):
+        rho_o = 832.5
+        rho_w = 1002.7
+        eta_o = 0.008737
+        eta_w = 0.00102
+        delta_rho = abs(rho_w-rho_o)
+        sigma = 0.00822
+        r_v = 0.01446        
+    elif(exp == "2mmol_30C"):
+        rho_o = 825.4
+        rho_w = 1000
+        eta_o = 0.00604
+        eta_w = 0.00082
+        delta_rho = abs(rho_w-rho_o)
+        sigma = 0.00817
+        r_v = 0.03953
+    elif(exp == "5mmol_30C"):
+        rho_o = 825.4
+        rho_w = 1000
+        eta_o = 0.00604
+        eta_w = 0.00082
+        delta_rho = abs(rho_w-rho_o)
+        sigma = 0.00817
+        r_v = 0.04727
+    elif(exp == "10mmol_21C"):
+        rho_o = 832.5
+        rho_w = 1002.7
+        eta_o = 0.008737
+        eta_w = 0.00102
+        delta_rho = abs(rho_w-rho_o)
+        sigma = 0.00822
+        r_v = 0.01448
+    elif(exp == "10mmol_30C"):
+        rho_o = 825.4
+        rho_w = 1000
+        eta_o = 0.00604
+        eta_w = 0.00082
+        delta_rho = abs(rho_w-rho_o)
+        sigma = 0.00817
+        r_v = 0.01086
+    elif(exp == "15mmol_20C"):
+        rho_o = 832.5
+        rho_w = 1002.7
+        eta_o = 0.008737
+        eta_w = 0.00102
+        delta_rho = abs(rho_w-rho_o)
+        sigma = 0.00822
+        r_v = 0.01551
+    elif(exp == "15mmol_30C"):
+        rho_o = 825.4
+        rho_w = 1000
+        eta_o = 0.00604
+        eta_w = 0.00082
+        delta_rho = abs(rho_w-rho_o)
+        sigma = 0.00817
+        r_v = 0.01316
     else:
         rho_o = 883 # density of organic phase kg/m3
         rho_w = 998 # density of water phase kg/m3

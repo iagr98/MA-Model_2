@@ -13,6 +13,9 @@ def set_geometry_parameter(exp="ye"):
     elif((exp == "niba1") or (exp == "niba2") or (exp == "niba3") or (exp == "niba4")):
         r = 0.1
         l = 1.0
+    elif((exp == "2mmol_21C") or (exp == "2mmol_30C") or (exp == "5mmol_30C") or (exp == "10mmol_21C") or (exp == "10mmol_30C") or (exp == "15mmol_20C") or (exp == "15mmol_30C") or (exp == "20mmol_21C") or (exp == "20mmol_30C") or (exp == "25mmol_21C") or (exp == "25mmol_30C")):
+        r = 0.1
+        l = 1.3
     else:
         r = 0.15
         l = 1.0
