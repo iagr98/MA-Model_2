@@ -15,9 +15,9 @@ Constants: density difference 174.60000000000002 kg/m3
 Constants: interfacial tension 0.00817 N/m
 Constants: asymetric film drainage parameter 0.01316 -
 ----------------------------------------
-Initial conditions water height:  0.096949838 m
+Initial conditions water height:  0.123460012 m
 Initial conditions liquid height:  0.2 m
-Initial conditions dense-packed zone:  0.133665793 m
+Initial conditions dense-packed zone:  0.160175967 m
 ----------------------------------------
 Boundary conditions sauter mean diameter:  330.56 um
 Boundary conditions maximum diameter:  826.4 um
@@ -56,40 +56,40 @@ Boundary conditions number of droplets:  [0.00000000e+00 0.00000000e+00 0.000000
  3.59881719e+02 2.95972519e+02 2.50514292e+02 2.00988452e+02
  1.78423604e+02 1.50563647e+02 1.26254442e+02 1.12988678e+02
  9.66254044e+01 7.93662420e+01 6.15759716e+01 5.44635280e+01] -
-Overwriting boundary conditions org. phase flow rate outlet for h_w=const.:  0.5782554860551797 m3/h
-Overwriting boundary conditions aq. phase flow rate outlet for constant h_w & h_w:  0.32609688094482014 m3/h
+Overwriting boundary conditions org. phase flow rate outlet for h_w=const.:  0.5810435098215196 m3/h
+Overwriting boundary conditions aq. phase flow rate outlet for constant h_w & h_w:  0.32330885717848024 m3/h
 Solving ivp...
   message: A termination event occurred.
   success: True
    status: 1
-        t: [ 0.000e+00  1.000e-01 ...  9.660e+01  9.670e+01]
-        y: [[ 9.695e-02  9.695e-02 ...  9.673e-02  9.672e-02]
+        t: [ 0.000e+00  1.000e-01 ...  3.790e+01  3.800e+01]
+        y: [[ 1.235e-01  1.235e-01 ...  1.234e-01  1.234e-01]
             [ 2.000e-01  2.000e-01 ...  2.000e-01  2.000e-01]
-            [ 1.337e-01  1.337e-01 ...  1.954e-01  1.955e-01]]
-      sol: <scipy.integrate._ivp.common.OdeSolution object at 0x00000251EB9788F0>
- t_events: [array([ 9.678e+01]), array([], dtype=float64), array([], dtype=float64)]
- y_events: [array([[ 9.672e-02,  2.000e-01,  1.990e-01]]), array([], dtype=float64), array([], dtype=float64)]
-     nfev: 56
+            [ 1.602e-01  1.602e-01 ...  1.883e-01  1.884e-01]]
+      sol: <scipy.integrate._ivp.common.OdeSolution object at 0x00000143816289B0>
+ t_events: [array([ 3.805e+01]), array([], dtype=float64), array([], dtype=float64)]
+ y_events: [array([[ 1.234e-01,  2.000e-01,  1.990e-01]]), array([], dtype=float64), array([], dtype=float64)]
+     nfev: 26
      njev: 0
       nlu: 0
-[array([96.78047733]), array([], dtype=float64), array([], dtype=float64)]
+[array([38.05103558]), array([], dtype=float64), array([], dtype=float64)]
 ----------------------------------------
 Start calculation of algebraic variables
 ----------------------------------------
-Height of dense-packed zone at end of simulation:  102.27612773773089 mm.  Volume:  0.021271993063196847 m^3
+Height of dense-packed zone at end of simulation:  75.61803369217091 mm.  Volume:  0.014396898709383201 m^3
 Efficieny of separetor at the end of simulation:  100.0 [%]
 ----------------------------------------
-Computation time:  0:02:56.531910
+Computation time:  0:01:27.570127
 ----------------------------------------
-----------------------
+oat64)]
+----------------------------------------
 Start calculation of algebraic variables
 ----------------------------------------
-Height of dense-packed zone at end of simulation:  100.40724673713278 mm.  Volume:  0.020786224323259838 m^3
+Height of dense-packed zone at end of simulation:  83.64800632245101 mm.  Volume:  0.016444568723734877 m^3
 Efficieny of separetor at the end of simulation:  100.0 [%]
 ----------------------------------------
-Computation time:  0:03:52.594863
+Computation time:  0:01:27.455291
 ----------------------------------------
-------------------------
-----------
-Computation time:  0:01:38.408152
+------------
+Computation time:  0:01:27.767686
 ----------------------------------------

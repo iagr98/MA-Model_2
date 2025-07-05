@@ -15,7 +15,7 @@ dV_ges = df['dV_ges'].tolist()
 eps_0 = df['eps_0'].tolist()
 if experiment == "sozh":
     h_dp_max = df['h_dis_max'].tolist()
-    h_w_0 = df['h_c_0_trennspiegel'].tolist()   # CHANGE for option 1 or 2.
+    h_w_0 = df['h_c_0_DPZ_bot_mean'].tolist()   # CHANGE for option 1 or 2.
 
 
 def parallel_simulation(params):
@@ -54,7 +54,7 @@ if __name__ == "__main__":
     
     # Save results
     df_results = pd.DataFrame(results)
-    df_results.to_csv('simulation_results_parallel_evaluation_sozh.csv', index=False)
+    df_results.to_csv('simulation_results_parallel_evaluation_sozh_opt_2.csv', index=False)
     print("Alle Simulationen abgeschlossen. Ergebnisse gespeichert.")
 
    
