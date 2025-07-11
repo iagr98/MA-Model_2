@@ -18,18 +18,15 @@ def init_sim(exp, phi_0, dV_ges, eps_0, h_dp_max, h_w_0, N_s, N_d):
     ic.set_initial_conditions(exp, h_dp_max, h_w_0)
     return sm.SeparatorModel(pp, gp, np, mp, op, ic)
 
-def run_sim(exp="ye", phi_0=610e-6, dV_ges=240, eps_0=0.2, h_dp_max=0.05, h_w_0=0.1, N_s=200, N_d=80):
+def run_sim(exp="ye", phi_0=610e-6, dV_ges=240, eps_0=0.5, h_dp_max=0.05, h_w_0=0.1, N_s=200, N_d=80):
     Sim = init_sim(exp, phi_0, dV_ges, eps_0, h_dp_max, h_w_0, N_s, N_d)
     Sim.solve_ODE(h_w_const=True, h_l_const=True, print_logfile=True, report=True, calc_algebraic=True)
     return Sim
 
 if __name__ == "__main__":
 
-    exp = "2mmol_21C"
-    phi_0 = 816.5e-6
-    dV_ges = 989
-    eps_0 = 0.5
-    h_dp_max = 0.06
-    h_w_0 = 0.1
+    exp = "sensitivity"
+    phi_0 = 250e-6
+    dV_ges = 750
 
-    Sim = run_sim(exp, phi_0, dV_ges, eps_0, h_dp_max, h_w_0)
+    Sim = run_sim(exp, phi_0, dV_ges)
