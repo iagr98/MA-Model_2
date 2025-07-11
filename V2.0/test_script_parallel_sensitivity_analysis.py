@@ -12,7 +12,7 @@ def parallel_simulation(params):
     phi_0, dV_ges = params
     print(f"Start simulation with phi_0={phi_0}, dV_ges={dV_ges}")
     try:  
-        Sim = run_sim(phi_0, dV_ges, exp='sensitivity')
+        Sim = run_sim(exp='sensitivity', phi_0=phi_0, dV_ges=dV_ges)
         return {'phi_0': phi_0, 'dV_ges': dV_ges, 'Sep. Eff.': Sim.E, 'status': 'success'}
         
     except Exception as e:
@@ -21,9 +21,9 @@ def parallel_simulation(params):
 
 if __name__ == "__main__":
     
-    parameters = [(phi, dV) for phi in phi_0 for dV in dV_ges]
+    parameters = [(phi, dV) for dV in dV_ges for phi in phi_0]
     
-    results = joblib.Parallel(n_jobs=N_CPU)(joblib.delayed(parallel_simulation)(param) for param in parameters)
+    results = joblib.Parallel(n_jobs=N_CPU, backend='multiprocessing')(joblib.delayed(parallel_simulation)(param) for param in parameters)
     
     # Save results
     df_results = pd.DataFrame(results)
