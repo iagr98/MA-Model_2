@@ -63,6 +63,7 @@ class SeparatorModel:
         self.V_dp = 0
         self.E = 0
         self.L_dp = 0
+        self.h_dpz = 0
         
     # update operating conditions
     def update_operating_conditions(self, operating_conditions):
@@ -1028,11 +1029,13 @@ class SeparatorModel:
         ## assigning output variables
         self.V_dp = self.get_V_dp()
         self.E = self.get_efficiency(n)
+        self.h_dpz = np.concatenate((np.ones(2)*(self.h_dp-self.h_w), np.zeros(1)))
 
         # print height and volume of dense-packed zone amd efficiency of the separator at end of simulation
         if report:
             print('Height of dense-packed zone at end of simulation: ', (z.T[-1,2]-z.T[-1,0])*1e3, 'mm.', ' Volume: ', self.V_dp, 'm^3')
             print('Efficieny of separetor at the end of simulation: ', self.E*100, '[%]')
+            print('h_dpz: ', self.h_dpz, 'm ')
 
         ## save results as dataframe and export 
         df = pd.DataFrame(data=z.T, columns=['Water height', 'Liquid height', 'Dense-packed zone height']) # 
