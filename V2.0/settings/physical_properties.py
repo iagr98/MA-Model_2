@@ -17,7 +17,7 @@ def set_physical_properties(exp="ye"):
         eta_w = 1.012e-3
         delta_rho = abs(rho_w-rho_o)
         sigma = 0.036
-        r_v = 0.01224
+        r_v = 0.02391
     elif(exp == "niba1"):
         rho_o = 832.5
         rho_w = 1002.7
@@ -25,7 +25,7 @@ def set_physical_properties(exp="ye"):
         eta_w = 1.02e-3
         delta_rho = abs(rho_w-rho_o)
         sigma = 0.00822
-        r_v = 0.05073
+        r_v = 0.07896
     elif(exp == "niba2"):
         rho_o = 825.4
         rho_w = 1000
@@ -33,7 +33,7 @@ def set_physical_properties(exp="ye"):
         eta_w = 0.82e-3
         delta_rho = abs(rho_w-rho_o)
         sigma = 0.00822
-        r_v = 0.03329
+        r_v = 0.08725
     elif(exp == "niba3"):
         rho_o = 818.2
         rho_w = 996.5
@@ -41,7 +41,7 @@ def set_physical_properties(exp="ye"):
         eta_w = 0.68e-3
         delta_rho = abs(rho_w-rho_o)
         sigma = 0.00822
-        r_v = 0.02182
+        r_v = 0.05868
     elif(exp == "niba4"):
         rho_o = 810.9
         rho_w = 992.3
@@ -49,7 +49,7 @@ def set_physical_properties(exp="ye"):
         eta_w = 0.56e-3
         delta_rho = abs(rho_w-rho_o)
         sigma = 0.00822
-        r_v = 0.02024
+        r_v = 0.05489
     elif(exp == "2mmol_21C"):
         rho_o = 832.5
         rho_w = 1002.7
@@ -57,7 +57,7 @@ def set_physical_properties(exp="ye"):
         eta_w = 0.00102
         delta_rho = abs(rho_w-rho_o)
         sigma = 0.00822
-        r_v = 0.01446        
+        r_v = 0.03714        
     elif(exp == "2mmol_30C"):
         rho_o = 825.4
         rho_w = 1000
@@ -65,7 +65,7 @@ def set_physical_properties(exp="ye"):
         eta_w = 0.00082
         delta_rho = abs(rho_w-rho_o)
         sigma = 0.00817
-        r_v = 0.03953
+        r_v = 0.09961
     elif(exp == "5mmol_30C"):
         rho_o = 825.4
         rho_w = 1000
@@ -73,7 +73,7 @@ def set_physical_properties(exp="ye"):
         eta_w = 0.00082
         delta_rho = abs(rho_w-rho_o)
         sigma = 0.00817
-        r_v = 0.04727
+        r_v = 0.11438
     elif(exp == "10mmol_21C"):
         rho_o = 832.5
         rho_w = 1002.7
@@ -81,7 +81,7 @@ def set_physical_properties(exp="ye"):
         eta_w = 0.00102
         delta_rho = abs(rho_w-rho_o)
         sigma = 0.00822
-        r_v = 0.01448
+        r_v = 0.03807
     elif(exp == "10mmol_30C"):
         rho_o = 825.4
         rho_w = 1000
@@ -89,7 +89,7 @@ def set_physical_properties(exp="ye"):
         eta_w = 0.00082
         delta_rho = abs(rho_w-rho_o)
         sigma = 0.00817
-        r_v = 0.01086
+        r_v = 0.03119
     elif(exp == "15mmol_20C"):
         rho_o = 832.5
         rho_w = 1002.7
@@ -97,7 +97,7 @@ def set_physical_properties(exp="ye"):
         eta_w = 0.00102
         delta_rho = abs(rho_w-rho_o)
         sigma = 0.00822
-        r_v = 0.0166
+        r_v = 0.03936
     elif(exp == "15mmol_30C"):
         rho_o = 825.4
         rho_w = 1000
@@ -105,7 +105,7 @@ def set_physical_properties(exp="ye"):
         eta_w = 0.00082
         delta_rho = abs(rho_w-rho_o)
         sigma = 0.00817
-        r_v = 0.01316
+        r_v = 0.03790
     else:
         rho_o = 883 # density of organic phase kg/m3
         rho_w = 998 # density of water phase kg/m3
