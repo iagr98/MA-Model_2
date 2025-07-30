@@ -17,7 +17,7 @@ def set_initial_conditions(exp="ye", h_dp_max=0.05, h_w_0=0.1):
         h_l = 0.2
     elif((exp == "2mmol_21C") or (exp == "2mmol_30C") or (exp == "5mmol_30C") or (exp == "10mmol_21C") or (exp == "10mmol_30C") or (exp == "15mmol_20C") or (exp == "15mmol_30C") or (exp == "20mmol_21C") or (exp == "20mmol_30C") or (exp == "25mmol_21C") or (exp == "25mmol_30C")):
         h_w = h_w_0
-        h_dp = h_dp_max + h_w_0
+        h_dp = min((h_dp_max+h_w_0), (h_w_0+0.05)) if (h_dp_max != 0) else (0.05 + h_w_0)
         h_l = 0.2        
     else:
         h_w = 0.1
