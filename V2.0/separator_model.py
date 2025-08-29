@@ -64,6 +64,7 @@ class SeparatorModel:
         self.E = 0
         self.L_dp = 0
         self.h_dpz = 0
+        self.dpz_flooded = False
         
     # update operating conditions
     def update_operating_conditions(self, operating_conditions):
@@ -1025,6 +1026,9 @@ class SeparatorModel:
                             print('q_dp is zero at length: ', L_dp, 'm')
                         break
             self.L_dp = L_dp
+            self.dpz_flooded = True if L_dp == self.geometry_parameter.l else False
+            print('L_dp = ', self.L_dp)
+            print('dpz_flooded: ', self.dpz_flooded)
 
         ## assigning output variables
         self.V_dp = self.get_V_dp()

@@ -25,8 +25,9 @@ def run_sim(exp="ye", phi_0=610e-6, dV_ges=240, eps_0=0.5, h_dp_max=0.05, h_w_0=
 
 if __name__ == "__main__":
 
-    exp = "sensitivity"
-    phi_0 = 250e-6
-    dV_ges = 750
+    exp = "ye"
+    phi_0 = 350e-6
+    dV_ges = 160
+    eps_0 = 0.2
 
-    Sim = run_sim(exp, phi_0, dV_ges)
+    Sim = run_sim(exp, phi_0, dV_ges, eps_0)
