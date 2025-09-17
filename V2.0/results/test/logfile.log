@@ -1,79 +1,77 @@
 ----------------------------------------
 Separator model calculation
 ----------------------------------------
-Constants: number of segments in separator 200 -
+Constants: number of segments in separator 1000 -
 Constants: number of droplet classes 80 -
-Constants: total flow rate inlet 1.2499720524271842 m3/h
-Constants: phase fraction at inlet 0.2999961854159247 -
-Constants: radius of separator 0.1 m
-Constants: length of separator 1.3 m
-Constants: density of organic phase 832.5 kg/m3
-Constants: density of water phase 1002.7 kg/m3
-Constants: viscosity of organic phase 0.008737 Pa*s
-Constants: viscosity of water phase 0.00102 Pa*s
-Constants: density difference 170.20000000000005 kg/m3
-Constants: interfacial tension 0.00822 N/m
-Constants: asymetric film drainage parameter 0.03807 -
+Constants: total flow rate inlet 0.24000000000000002 m3/h
+Constants: phase fraction at inlet 0.5 -
+Constants: radius of separator 0.075 m
+Constants: length of separator 0.56 m
+Constants: density of organic phase 819.72 kg/m3
+Constants: density of water phase 998.29 kg/m3
+Constants: viscosity of organic phase 0.00973 Pa*s
+Constants: viscosity of water phase 0.001012 Pa*s
+Constants: density difference 178.56999999999994 kg/m3
+Constants: interfacial tension 0.036 N/m
+Constants: asymetric film drainage parameter 0.02391 -
 ----------------------------------------
-Initial conditions water height:  0.1097543914445277 m
-Initial conditions liquid height:  0.2 m
-Initial conditions dense-packed zone:  0.1472042907500832 m
+Initial conditions water height:  0.055 m
+Initial conditions liquid height:  0.15 m
+Initial conditions dense-packed zone:  0.095 m
 ----------------------------------------
-Boundary conditions sauter mean diameter:  347.8200915764 um
-Boundary conditions maximum diameter:  869.550228941 um
-Boundary conditions total flow rate liquid inlet:  1.2499720524271842 m3/h
-Boundary conditions aq. phase flow rate inlet:  1.2499720524271842 m3/h
-Boundary conditions aq. phase flow rate outlet:  0.6249860262135921 m3/h
-Boundary conditions org. phase flow rate outlet:  0.6249860262135921 m3/h
-Boundary conditions holdup in aq. phase:  0.2999960599991546 -
-Boundary conditions droplet classes:  [  5.43468893  16.30406679  27.17344465  38.04282252  48.91220038
-  59.78157824  70.6509561   81.52033396  92.38971182 103.25908969
- 114.12846755 124.99784541 135.86722327 146.73660113 157.605979
- 168.47535686 179.34473472 190.21411258 201.08349044 211.9528683
- 222.82224617 233.69162403 244.56100189 255.43037975 266.29975761
- 277.16913547 288.03851334 298.9078912  309.77726906 320.64664692
- 331.51602478 342.38540265 353.25478051 364.12415837 374.99353623
- 385.86291409 396.73229195 407.60166982 418.47104768 429.34042554
- 440.2098034  451.07918126 461.94855912 472.81793699 483.68731485
- 494.55669271 505.42607057 516.29544843 527.1648263  538.03420416
- 548.90358202 559.77295988 570.64233774 581.5117156  592.38109347
- 603.25047133 614.11984919 624.98922705 635.85860491 646.72798277
- 657.59736064 668.4667385  679.33611636 690.20549422 701.07487208
- 711.94424995 722.81362781 733.68300567 744.55238353 755.42176139
- 766.29113925 777.16051712 788.02989498 798.89927284 809.7686507
- 820.63802856 831.50740642 842.37678429 853.24616215 864.11554001] um
-Boundary conditions total number of droplets:  2208365 -
+Boundary conditions sauter mean diameter:  610.0 um
+Boundary conditions maximum diameter:  1524.9999999999998 um
+Boundary conditions total flow rate liquid inlet:  0.24000000000000002 m3/h
+Boundary conditions aq. phase flow rate inlet:  0.24000000000000002 m3/h
+Boundary conditions aq. phase flow rate outlet:  0.12000000000000001 m3/h
+Boundary conditions org. phase flow rate outlet:  0.12000000000000001 m3/h
+Boundary conditions holdup in aq. phase:  0.4999974661481452 -
+Boundary conditions droplet classes:  [   9.53125   28.59375   47.65625   66.71875   85.78125  104.84375
+  123.90625  142.96875  162.03125  181.09375  200.15625  219.21875
+  238.28125  257.34375  276.40625  295.46875  314.53125  333.59375
+  352.65625  371.71875  390.78125  409.84375  428.90625  447.96875
+  467.03125  486.09375  505.15625  524.21875  543.28125  562.34375
+  581.40625  600.46875  619.53125  638.59375  657.65625  676.71875
+  695.78125  714.84375  733.90625  752.96875  772.03125  791.09375
+  810.15625  829.21875  848.28125  867.34375  886.40625  905.46875
+  924.53125  943.59375  962.65625  981.71875 1000.78125 1019.84375
+ 1038.90625 1057.96875 1077.03125 1096.09375 1115.15625 1134.21875
+ 1153.28125 1172.34375 1191.40625 1210.46875 1229.53125 1248.59375
+ 1267.65625 1286.71875 1305.78125 1324.84375 1343.90625 1362.96875
+ 1382.03125 1401.09375 1420.15625 1439.21875 1458.28125 1477.34375
+ 1496.40625 1515.46875] um
+Boundary conditions total number of droplets:  33067 -
 Boundary conditions number of droplets:  [0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00
- 0.00000000e+00 0.00000000e+00 0.00000000e+00 5.41027856e+02
- 2.52729275e+03 5.43078698e+03 1.13568530e+04 1.94497891e+04
- 3.21136822e+04 4.46403643e+04 6.00745228e+04 7.66280575e+04
- 9.00561394e+04 1.01462124e+05 1.11793874e+05 1.17883493e+05
- 1.23476316e+05 1.22042076e+05 1.22107983e+05 1.16477347e+05
- 1.11778501e+05 1.04406373e+05 9.77442954e+04 8.88844950e+04
- 8.05527296e+04 7.24149870e+04 6.52367957e+04 5.77671817e+04
- 5.06464130e+04 4.44454735e+04 3.87817412e+04 3.41979864e+04
- 2.96188333e+04 2.54213841e+04 2.20340332e+04 1.88930254e+04
- 1.62414182e+04 1.37924790e+04 1.16207894e+04 1.00068747e+04
- 8.58320879e+03 7.25666461e+03 6.26274567e+03 5.19396207e+03
- 4.46512348e+03 3.74904588e+03 3.12308985e+03 2.68532964e+03
- 2.24991876e+03 1.92785749e+03 1.61499465e+03 1.40349161e+03
- 1.14729153e+03 9.66966676e+02 8.19262415e+02 6.84375794e+02
- 5.91422491e+02 5.11229366e+02 4.19207427e+02 3.57281026e+02
- 2.98729959e+02 2.53416046e+02 2.17939316e+02 1.81530060e+02
- 1.56084361e+02 1.28366291e+02 1.08650596e+02 8.71707353e+01
- 7.73841311e+01 6.53009848e+01 5.47578352e+01 4.90043387e+01
- 4.19074204e+01 3.44219462e+01 2.67061250e+01 2.36213859e+01] -
-Overwriting boundary conditions org. phase flow rate outlet for h_w=const.:  0.3759871880173739 m3/h
-Overwriting boundary conditions aq. phase flow rate outlet for constant h_w & h_w:  0.8739848644098104 m3/h
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 8.10109204e+00
+ 3.78424714e+01 8.13180036e+01 1.70052078e+02 2.91231828e+02
+ 4.80854900e+02 6.68423438e+02 8.99527137e+02 1.14739184e+03
+ 1.34845751e+03 1.51924526e+03 1.67394794e+03 1.76513098e+03
+ 1.84887523e+03 1.82739961e+03 1.82838647e+03 1.74407602e+03
+ 1.67371774e+03 1.56333103e+03 1.46357627e+03 1.33091386e+03
+ 1.20615800e+03 1.08430734e+03 9.76824539e+02 8.64978116e+02
+ 7.58355136e+02 6.65505237e+02 5.80699221e+02 5.12064271e+02
+ 4.43498226e+02 3.80647632e+02 3.29927062e+02 2.82895114e+02
+ 2.43191219e+02 2.06521975e+02 1.74004136e+02 1.49838149e+02
+ 1.28520858e+02 1.08657821e+02 9.37753546e+01 7.77719009e+01
+ 6.68586209e+01 5.61364177e+01 4.67636519e+01 4.02088402e+01
+ 3.36892061e+01 2.88668149e+01 2.41821565e+01 2.10152112e+01
+ 1.71789940e+01 1.44788960e+01 1.22672431e+01 1.02475154e+01
+ 8.85567717e+00 7.65490371e+00 6.27701127e+00 5.34975500e+00
+ 4.47303936e+00 3.79453052e+00 3.26331896e+00 2.71814419e+00
+ 2.33713247e+00 1.92209537e+00 1.62688199e+00 1.30525285e+00
+ 1.15871292e+00 9.77785675e-01 8.19917603e-01 7.33767501e-01
+ 6.27501645e-01 5.15417738e-01 3.99884727e-01 3.53695321e-01] -
+Overwriting boundary conditions org. phase flow rate outlet for h_w=const.:  0.11998099230725537 m3/h
+Overwriting boundary conditions aq. phase flow rate outlet for constant h_w & h_w:  0.12001900769274465 m3/h
 Solving ivp...
   message: The solver successfully reached the end of the integration interval.
   success: True
    status: 0
         t: [ 0.000e+00  1.000e-01 ...  1.999e+02  2.000e+02]
-        y: [[ 1.098e-01  1.098e-01 ...  1.097e-01  1.097e-01]
-            [ 2.000e-01  2.000e-01 ...  2.000e-01  2.000e-01]
-            [ 1.472e-01  1.472e-01 ...  1.499e-01  1.499e-01]]
-      sol: <scipy.integrate._ivp.common.OdeSolution object at 0x00000200C97DAB10>
+        y: [[ 5.500e-02  5.500e-02 ...  5.500e-02  5.500e-02]
+            [ 1.500e-01  1.500e-01 ...  1.500e-01  1.500e-01]
+            [ 9.500e-02  9.500e-02 ...  9.487e-02  9.487e-02]]
+      sol: <scipy.integrate._ivp.common.OdeSolution object at 0x0000026945B2F980>
  t_events: [array([], dtype=float64), array([], dtype=float64), array([], dtype=float64)]
  y_events: [array([], dtype=float64), array([], dtype=float64), array([], dtype=float64)]
      nfev: 26
@@ -83,16 +81,13 @@ Solving ivp...
 ----------------------------------------
 Start calculation of algebraic variables
 ----------------------------------------
-L_dp =  1.3
-dpz_flooded:  True
-Height of dense-packed zone at end of simulation:  40.15300777940828 mm.  Volume:  0.017894176918640047 m^3
+q_dp is zero at length:  0.36064 m
+L_dp =  0.36064
+dpz_flooded:  False
+Height of dense-packed zone at end of simulation:  39.86954549368013 mm.  Volume:  0.004255196644980358 m^3
 Efficieny of separetor at the end of simulation:  100.0 [%]
-h_dpz:  [0.04015301 0.04015301 0.        ] m 
+h_dpz:  [0.03986955 0.03986955 0.        ] m 
 ----------------------------------------
-Computation time:  0:04:42.010958
+Computation time:  0:18:25.414819
 ----------------------------------------
----------------------------------------
-Computation time:  0:04:18.684604
-----------------------------------------
-
---
+----------------------
